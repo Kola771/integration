@@ -1,0 +1,56 @@
+body{
+    background-color: #bdc3c7;
+}
+h1{
+    color: #9b59b6;
+}
+h1:hover{
+    color: blue;
+}
+a:visited{
+    color: rgb(12, 12, 12);
+}
+h2{
+    color: orange;
+}
+li{
+    color: rgb(44, 44, 143);
+}
+p{
+    background-color: yellow;
+}
+*{
+    border: 3px solid red;
+}
+.hello{
+    background-color: white;
+}
+#special{
+    border: 2px solid rgb(54, 54, 180);
+}
+#special::first-letter{
+    font-size: 100px;
+    color: green;
+}
+label{
+    text-transform: uppercase;
+}
+div p{
+    font-size: 25px;
+}
+input[type="text"]{
+    background-color: grey;
+}
+div:nth-of-type(3)>p{
+    background-color: pink;
+}
+div:nth-of-type(3)>p:nth-of-type(2){
+    border: 3px solid white;
+}
+div em{
+    border: 3px solid white;
+    font-size: 20px;
+}
+input[type="checkbox"]{
+    margin-left : 50px
+}

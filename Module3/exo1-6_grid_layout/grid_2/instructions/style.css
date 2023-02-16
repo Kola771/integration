@@ -1,0 +1,52 @@
+header{
+    background-color: rgb(49, 48, 48);
+    text-align: center;
+    color: white;
+    padding: 0.5em;
+}
+footer{
+    background-color: rgb(49, 48, 48);
+    text-align: center;
+    color: white;
+    padding: 0.5em;
+}
+footer>img{
+    width: 60px;
+}
+span{
+    color: orangered;
+}
+body{
+    background-color: rgb(189, 186, 186);
+}
+h1{
+    color: orangered;
+}
+
+
+.garage24{
+    display: grid;
+    grid-template: repeat(4, 100px)/repeat(5, 1fr);
+    border: 2px dashed red;
+    padding: 1em;
+    gap: 1em;
+}
+.grid-item1{
+    background-color: #fff;
+    padding: 15px;
+}
+section{
+    margin-bottom: 15px;
+}
+.item1{
+    grid-area: 1/1/2/4;
+}
+.item2{
+    grid-area: 2/1/4/3;
+}
+.item3{
+    grid-area: 2/3/4/4;
+}
+.item4{
+    grid-area: 5/1/4/4;
+}

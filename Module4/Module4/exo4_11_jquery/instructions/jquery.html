@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>jQuery</title>
+
+    <script src="ressources/jquery-3.5.1.min.js"></script>
+    <script>
+            $(document).ready(function(){
+                $("main>div:nth-of-type(2)").css("color", "green");
+
+                    // Script Css 
+
+                    $("#bouton").click(function(){
+                        $("main>div:nth-of-type(2)").css("color", "blue");
+                    });
+
+
+                    // Script Html 
+
+                    $("#html").click(function(){
+                        $("main>div:nth-of-type(2)").html("<p>Hello world</p>");
+                        $("main>div:nth-of-type(2)").css("font-style", "italic");
+                    });
+                    
+                    // Script toggle
+
+                    $("#toggle").click(function(){
+                        $("main>div:nth-of-type(2)").toggle(1000);
+                    });
+
+                    // Script slideToggle
+
+                    $("#slide").click(function(){
+                        $("main>div:nth-of-type(2)").slideToggle();
+                    });
+              });
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            $("main>section>div:nth-of-type(2)").css("color", 'black');
+
+            $("#toggle1").click(function(){
+                $("main>section:nth-of-type(1)>div:nth-of-type(2)").slideToggle();
+            })
+
+            $("#toggle2").click(function(){
+                $("main>section:nth-of-type(2)>div:nth-of-type(2)").toggle(1000);
+            })
+        })
+    </script>
+</head>
+<body>
+
+    <header>
+            <h1>jQuery</h1>
+            <p>Utilisation de jQuery</p>
+    </header>
+
+    <main>
+
+        <div>
+                <button id="bouton">Css</button>
+                <button id="html">Html</button>
+                <button id="toggle">Toggle</button>
+                <button id="slide">Slide</button>
+        </div>
+
+        <div>
+
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, modi? Aliquam quia debitis, beatae expedita ratione ab, rem sit provident enim odit commodi saepe laudantium impedit nostrum. Doloremque, commodi quo?</p> 
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, modi? Aliquam quia debitis, beatae expedita ratione ab, rem sit provident enim odit commodi saepe laudantium impedit nostrum. Doloremque, commodi quo?</p> 
+       </div>
+
+       <section>
+        <div>
+            <h3>Slide</h3> 
+            <button id="toggle1">+</button>
+        </div>
+
+            <div>
+
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, modi? Aliquam quia debitis, beatae expedita ratione ab, rem sit provident enim odit commodi saepe laudantium impedit nostrum. Doloremque, commodi quo?</p> 
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, modi? Aliquam quia debitis, beatae expedita ratione ab, rem sit provident enim odit commodi saepe laudantium impedit nostrum. Doloremque, commodi quo?</p> 
+            </div>
+       </section>
+       <section>
+        <div>
+            <h3>Toggle</h3> 
+            <button id="toggle2">+</button>
+        </div>
+
+            <div>
+
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, modi? Aliquam quia debitis, beatae expedita ratione ab, rem sit provident enim odit commodi saepe laudantium impedit nostrum. Doloremque, commodi quo?</p> 
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, modi? Aliquam quia debitis, beatae expedita ratione ab, rem sit provident enim odit commodi saepe laudantium impedit nostrum. Doloremque, commodi quo?</p> 
+            </div>
+       </section>
+       
+    </main>
+
+    <footer>
+        <img src="#" alt="#">
+        <p>Ce matériel pédagogique est la propriété de la 3W Academy. Cet exercice a été réalisé par Catherine Denos.</p>
+    </footer>
+</body>
+</html>

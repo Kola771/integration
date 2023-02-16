@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Vidéos</title>
+</head>
+<body>
+    <header>
+        <h1>Intégrer des médias en HTML</h1>
+        <p>Utilisation de services tiers et des éléments AUDIO, VIDEO pour intégrer des sons et des vidéos</p>
+       
+    </header>
+    <main>
+
+      <article>
+        <h2>La dernière conférence de Lea Verou (sur Vimeo)</h2>
+        <iframe
+                src="https://vimeo.com/364399309"
+                width="500" height="281" frameborder="0" webkitallowfullscreen
+                mozallowfullscreen allowfullscreen>
+        </iframe>
+
+      </article>
+      <article>
+        <h2>La balise video</h2>
+        <video controls poster="ressources/bunny.jpg">
+            <source src="ressources/bunny.mp4" type="video/mp4">
+            <source src="ressources/bunny.ogv" type="video/ogv">
+            Votre navigateur ne prend pas en charge les vidéos HTML5,
+            merci d'utiliser un navigateur plus récent.
+            </video>
+      </article>
+      <article>
+        <h2>La balise audio</h2>
+            <audio controls>
+                <source src="ressources/space.ogg" type="audio/ogg">
+                <source src="ressources/space.mp3" type="audio/mp3">
+            </audio>
+      </article>
+     
+    </main>
+    <footer>
+        <img src="#" alt="#">
+        <p>Ce matériel pédagogique est la propriété de la 3W Academy. Cet exercice a été réalisé par Catherine Denos.</p>
+    </footer>
+</body>
+</html>

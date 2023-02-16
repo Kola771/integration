@@ -1,0 +1,145 @@
+.container{
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article{
+    background-color: #fff;
+    padding: 1em;
+    border: 1px solid black;
+    margin-block: 4px;
+}
+
+header{
+    text-align: center;
+    background-color: #444;
+    color: #999;
+    padding: 1em;
+}
+
+h1{
+    font-size: 4rem;
+    color: #DD5735;
+}
+
+.code{
+    padding: 0.5em;
+    font-family: Monaco, monospace;
+    font-size: 14px;
+    color: #000;
+    background-color: #ddd;
+    border: 1px solid #bbb;
+}
+
+header h1{
+    margin: 0;
+}
+
+h2{
+    font-size: 3.2rem;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    font-family: sans-serif;
+    color: #555;
+    background-color: #eee;
+}
+
+.flot{
+    border: 1px solid grey;
+    border-radius: 1em;
+    padding: 1em;
+}
+
+.fou{
+    border: 1px solid grey;
+    border-radius: 2em;
+    padding: 1em;
+}
+
+.fol{
+    border: 1px solid grey;
+    border-top-left-radius: 2em;
+    padding: 1em;
+}
+
+.folle{
+    border: 1px solid grey;
+    border-radius: 1em 2em 3em 4em;
+    padding: 1em;
+}
+
+.folie{
+    border: 1px solid grey;
+    border-radius: 50%;
+    padding: 1em;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+/* .foie{
+    background-image: conic-gradient(red -45deg, red 45deg, yellow 45deg, yellow 135deg, green 135deg, green 225deg, blue 225deg,blue 315deg, red 315deg);
+    border-radius: 50%;
+    width: 15em;
+    height: 15em;
+  } */
+/* .okay{
+    background-color: #ff00d7;
+    padding: 2em;
+    margin: -1%;
+    width: 10%;
+    display: inline-block;
+    border-top-left-radius: 100%;
+}
+.okay1{
+    background-color: #ff8bf6;
+    padding: 2em;
+    margin: -1%;
+    width: 10%;
+    display: inline-block;
+    border-top-right-radius: 100%;
+}
+.okay2{
+    background-color:  purple;
+    padding: 2em;
+    -left: -1%;
+    width: 10%;
+    display: inline-block;
+    border-bottom-left-radius: 100%;
+}
+/* .okay3{
+    background-color: #d16bff;
+    padding: 2em;
+    margin-top: -2%;
+    width: 10%;
+    display: inline-block;
+    border-bottom-right-radius: 100%; */
+/* } */ 
+.ok{
+    background-color: grey;
+    padding: 2px;
+    color: #000;
+}
+footer{
+    text-align: center;
+    background-color: #444;
+    color: #999;
+    padding: 1em;
+}
+
+div{
+    width: 0;
+    aspect-ratio: 1;
+    border-top: 150px solid red;
+    border-right: 150px solid blue;
+    border-bottom: 150px solid grey;
+    border-left: 150px solid yellow;
+}
+.circle{
+    border-radius: 50%;
+}

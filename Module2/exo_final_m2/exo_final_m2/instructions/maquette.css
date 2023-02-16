@@ -1,0 +1,151 @@
+@font-face {
+    font-family: Lato;
+    src: url(lato/lato-bold.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: Lato;
+    src: url(lato/lato-bolditalic.woff2);
+    font-weight: bold;
+}
+header{
+    text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #40CCEA;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+
+li {
+    
+    justify-content: space-between;
+}
+
+li a {
+
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+
+.gauche{
+    float: left;
+    padding-right: 15px;
+    max-width: 48%;
+}
+#gauche{
+    clear: left;
+}
+.droite{
+    float: right;
+    padding-left: 15px;
+    max-width: 48%;
+}
+.azerty{
+    width: 2%;
+}
+.azert{
+    width: 4%;
+}
+svg{
+    width: 2%;
+}
+.oky{
+    border-radius: 1em 1em;
+    text-decoration: none;
+    color: white;
+    background-color: #40CCEA;
+    padding: 10px;   
+}
+h2{
+    text-transform: uppercase;
+    font-size: 1.6rem;
+}
+h3{
+    font-size: 1.4rem;
+}
+footer{
+    text-align: center; 
+    background-color: #40CCEA;
+    padding: 15px;
+}
+.oui{
+    text-decoration: none;
+    color: #40CCEA;
+}
+.ou{
+    text-decoration: none;
+    color: white;
+}
+body {
+    font-family: Lato;
+    font-weight: normal;
+    font-style: normal;
+	margin: 0;
+	color: #444;
+	line-height: 1.6;
+    font-weight: normal;
+}
+h1{
+    text-align: center;
+    color: #40CCEA;
+    border-bottom: 1px dashed #40CCEA;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    max-width : 900px;
+}
+.cont{
+    margin-left: 27%;
+    max-width : 900px;
+}
+.yo{
+    padding: 2em;
+    background-image: url(ressources/fond.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    min-height: 20em;
+    color: black;
+}
+.okk{
+    padding: 1em;
+    width: 400px;
+    color: black;
+    background-color: white;
+}
+p{
+    border: 1px solid white;
+    flex-basis: 50%;
+}
+.tres{
+    color: red;
+}
+.trop{
+    color: orange;
+}
+.pk{
+    font-family: lato;
+    font-weight: bold;
+}
+.simple{
+    width: 60px;
+}
+.complique{
+    border-top: 1px solid black;
+}

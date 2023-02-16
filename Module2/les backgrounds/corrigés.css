@@ -1,0 +1,119 @@
+.container{
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article{
+    background-color: #fff;
+    padding: 1em;
+    border: 1px solid black;
+    margin-block: 4px;
+}
+
+header{
+    text-align: center;
+    background-color: #444;
+    color: #999;
+    padding: 1em;
+}
+
+h1{
+    font-size: 4rem;
+    color: #DD5735;
+}
+
+.code{
+    padding: 0.5em;
+    font-family: Monaco, monospace;
+    font-size: 14px;
+    color: #000;
+    background-color: #ddd;
+    border: 1px solid #bbb;
+}
+
+header h1{
+    margin: 0;
+}
+
+h2{
+    font-size: 3.2rem;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    font-family: sans-serif;
+    color: #555;
+    background-color: #eee;
+}
+
+.block{
+    padding: 2em;
+    background-color: teal;
+    max-width: 40em;
+    min-height: 20em;
+    color: #fff;
+}
+
+.bg-small{
+    background-image: url(statue-of-liberty.jpg);
+}
+
+.bg-marge{
+    background-image: url(statue-of-liberty.jpg);
+    background-size: cover;
+}
+
+.bg-large{
+    background-image: url(statue-of-liberty.jpg);
+}
+
+.bg-size-contain{
+    background-size: contain;
+}
+
+.bg-size-cover{
+    background-size: cover;
+}
+
+.bg-size-50{
+    background-size: 50%;
+}
+
+.bg-size-80{
+    background-size: 80% 40%;
+}
+
+.bg-repeat{
+    background-repeat: repeat;
+}
+
+.bg-repeat-no{
+    background-repeat: no-repeat;
+}
+
+.bg-repeat-x{
+    background-repeat: repeat-x;
+}
+
+.bg-repeat-y{
+    background-repeat: repeat-y;
+}
+
+.bg-position-center{
+    background-position: center;
+}
+
+.bg-position-right-top{
+    background-position: right top;
+}
+
+.bg-position-right-bottom{
+    background-position: right bottom;
+}
+
+.bg-position-80-40{
+    background-position: 80% 40%;
+}

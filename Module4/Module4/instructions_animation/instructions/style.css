@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    background-color: rgb(49, 48, 48);
+}
+header>h1 {
+    color: orangered;
+}
+header>p {
+    color: rgb(153, 147, 147);
+}
+
+.grand{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+}
+.parent{
+   display: flex;
+   gap: 2em;
+   background-color: red;
+   justify-content: center;
+   padding: 3em;
+   width: 40%;
+}
+.exemple1{
+    background-color: #fff;
+    width: 10%;
+    height: 20vh;
+    border: 3px solid;
+    animation-name: kola;
+    animation-duration: 2s;
+    animation-delay: 1.2s;
+    animation-iteration-count: infinite;
+    
+}
+.exemple2{
+    background-color: #fff;
+    width: 10%;
+    height: 20vh;
+    border: 3px solid;
+    animation-name: kola;
+    animation-duration: 2s;
+    animation-delay: 1.4s;
+    animation-iteration-count: infinite;
+}
+.exemple3{
+    background-color: #fff;
+    width: 10%;
+    height: 20vh;
+    border: 3px solid;
+    animation-name: kola;
+    animation-duration: 2s;
+    animation-delay: 1.6s;
+    animation-iteration-count: infinite;
+}
+@keyframes kola {
+    0%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(0.8);
+    }
+}
+footer {
+    text-align: center;
+    background-color: rgb(49, 48, 48);
+    padding: 15px;
+}
+footer>p {
+    color: rgb(153, 147, 147);
+}

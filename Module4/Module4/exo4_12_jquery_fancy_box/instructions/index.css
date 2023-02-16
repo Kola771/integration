@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    background-color: rgb(247, 240, 240);
+}
+
+header {
+    text-align: center;
+    background-color: rgb(49, 48, 48);
+    padding: 15px;
+}
+header>h1 {
+    color: orangered;
+}
+header>p {
+    color: rgb(153, 147, 147);
+}
+
+main {
+    margin: 25px auto;
+    max-width: 1000px;
+}
+main>section>.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 230px);
+    column-gap: 0.5em;
+    row-gap: 1em;
+}
+footer {
+    text-align: center;
+    background-color: rgb(49, 48, 48);
+    padding: 15px;
+}
+footer>p {
+    color: rgb(153, 147, 147);
+}

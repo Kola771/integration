@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freshly Restaurant</title>
+    <link rel="icon" href="./instructions/ressources/images/favicon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/b48549a02e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header> 
+        <div>
+            <a href="contact.html"><img src="ressources/images/logo.png" alt="logo"></a>
+            <div class="s-rubric entete">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#950000" class="w-5 h-5">
+                    <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                </svg>
+                <h1>freshly restaurant</h1>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#950000" class="w-5 h-5">
+                    <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                </svg>
+            </div>
+        </div>
+        <nav>
+                <ul>
+                    <li><a href="home-mobile.html">Home</a></li>
+                    <li><a href="about-mobile.html">About </a></li>
+                    <li><a href="Menus1.html">Menus</a></li>
+                    <li><a class="active" href="#">Contact</a></li>
+                </ul>
+        </nav>
+    </header>
+    <main>
+       <section>
+            <div class="s-rubric">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#950000" class="w-5 h-5">
+                    <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                </svg>
+                <h2>Contact us</h2> 
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#950000" class="w-5 h-5">
+                    <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                </svg>
+            </div>
+            <p>If your want to make a reservation, please complete this form.<br></p> 
+            <p> <em> Fields with <span>* </span> are required.</em></p>
+            <form action="#">
+                <fieldset> 
+                        <legend>Reservation</legend> 
+                        <div>
+                            <label for="date">Date</label> 
+                            <div><input type="date" name="date" id="date" required></div> 
+                        </div> 
+                        <div>
+                            <label for="time">Time</label> 
+                            <div><input type="time" name="time" id="time" required></div>
+                        </div> 
+                        <div>
+                            <label for="guest">Number of guests</label> 
+                            <div><input type="number" name="nbre" id="guest" required></div>
+                        </div>
+                </fieldset>
+                <fieldset>
+                        <legend>Details</legend>
+                        <div>
+                            <label for="nom">Name</label> 
+                            <div><input type="text" id="nom" required></div>
+                        </div> 
+                        <div>
+                            <label for="mail">Email</label>
+                            <div><input type="email" name="mail" id="mail" required></div>
+                        </div>
+                        <div>
+                            <label for="tel">Telephone</label>
+                            <div><input type="tel" name="telephone" id="tel" required></div>
+                        </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Further request</legend>
+                    <textarea name="comment" id="" cols="30" rows="10"></textarea>
+                </fieldset>
+                <div>
+                    <input type="submit" value="Reserve" id="submit">
+                </div>
+            </form>
+       </section>
+       <section>
+            <div class="s-rubric">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#950000" class="w-5 h-5">
+                    <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                </svg>
+                <h2>Our location</h2> 
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#950000" class="w-5 h-5">
+                    <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                </svg>
+            </div>
+            <img src="Capture_décran.png" alt="image">
+       </section> 
+    </main>
+    <footer>
+        <div>
+                <section>
+                    <h3>Opening hours</h3>
+                    <p>Monday: Closed</p>
+                    <p> Tue-Wed : 9am - 10pm</p>
+                    <p> Thu-Fri : 9am - 10pm</p>
+                    <p> Sat-Sun : 5pm - 10pm</p>
+                </section>
+                <section>
+                    <h3>Contact</h3>
+                    <p>13 Christopher Street</p>
+                    <p>New York,</p>
+                    <p>NY 10014-3543</p>
+                    <a href="tel:+01 2000 800 9999">+01 2000 800 9999</a>
+                </section>
+                <section>
+                    <h3>Social networks</h3>
+                    <div>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </section>
+        </div>
+        <div>
+            <img src="ressources/images/logo-3wa.png" alt="Propriété de la 3wAcademy">
+            <p>Cet exercice de <a href="#">3W Academy</a>  est mis à disposition <a href="#"> pour l'usage personnel des étudiants. Pas de Rediffusion - Attribution - Pas d'Utilisation Commerciale - Pas de Modification - International.</a>
+                Les autorisations au-delà du champ de cette licence peuvent être obtenues auprès de <a href="#"> contact@3wa.fr</a>. Les maquettes ont été réalisées par <a href="#">Catherine Denos</a>. 
+                </p>
+        </div>
+    </footer>
+</body>
+</html>

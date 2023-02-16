@@ -1,0 +1,29 @@
+
+header{
+    background-color: rgb(49, 48, 48);
+    text-align: center;
+    color: white;
+    padding: 0.5em;
+}
+footer{
+    background-color: rgb(49, 48, 48);
+    text-align: center;
+    color: white;
+    padding: 0.5em;
+}
+footer>img{
+    width: 60px;
+}
+span{
+    color: #DD5735;
+}
+h1{
+    color: #DD5735;
+}
+body{
+    background-color: #fff;
+}
+main{
+    max-width: 1300px;
+    margin: 0 auto;
+}

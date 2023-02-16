@@ -1,0 +1,275 @@
+header{
+    background-color: rgb(49, 48, 48);
+    text-align: center;
+    color: white;
+    padding: 0.5em;
+}
+footer{
+    background-color: rgb(49, 48, 48);
+    text-align: center;
+    color: white;
+    padding: 0.5em;
+}
+footer>img{
+    width: 60px;
+}
+span{
+    color: orangered;
+}
+body{
+    background-color: rgb(189, 186, 186);
+}
+h1{
+    color: orangered;
+}
+
+.garage{
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    border: 2px dashed red;
+}
+.garage1{
+    background-color: white;
+}
+.garage0{
+    display: grid;
+    grid-template: repeat(2, 1fr)/100px 1fr;
+    border: 2px dashed red;
+}
+.garage2{
+    display: grid;
+    grid-template: repeat(3, 1fr)/repeat(4, 1fr);
+    border: 2px dashed red;
+}
+.garage3{
+    display: grid;
+    grid-template: repeat(3, 1fr)/repeat(4, 1fr);
+    border: 2px dashed red;
+    column-gap: 0.2em;
+    row-gap: 1em;
+}
+.garage4{
+    display: grid;
+    grid-template: repeat(3, 1fr)/repeat(4, 1fr);
+    border: 2px dashed red;
+    gap:1em 0.2em;
+}
+.garage5{
+    display: grid;
+    grid-template: repeat(3, 1fr)/repeat(4, 1fr);
+    border: 2px dashed red;
+    justify-items: center;
+}
+.garage6{
+    display: grid;
+    grid-template: repeat(3, 1fr)/repeat(4, 1fr);
+    border: 2px dashed red;
+    justify-items: start;
+}
+.garage7{
+    display: grid;
+    grid-template: repeat(3, 1fr)/repeat(4, 1fr);
+    border: 2px dashed red;
+    justify-items: end;
+}
+.garage8{
+    display: grid;
+    grid-template: repeat(3, 100px)/repeat(4, 1fr);
+    border: 2px dashed red;
+    align-items: center;
+}
+.garage9{
+    display: grid;
+    grid-template: repeat(3, 100px)/repeat(4, 1fr);
+    border: 2px dashed red;
+    align-items: start;
+}
+.garage10{
+    display: grid;
+    grid-template: repeat(3, 100px)/repeat(4, 1fr);
+    border: 2px dashed red;
+    align-items: end;
+}
+.garage11{
+    display: grid;
+    grid-template: repeat(3, 100px)/repeat(4, 1fr);
+    border: 2px dashed red;
+    align-items: stretch;
+}
+.garage12{
+    display: grid;
+    grid-template: repeat(3, auto)/repeat(4, auto);
+    border: 2px dashed red;
+    justify-content: center;
+}
+.garage13{
+    display: grid;
+    grid-template: repeat(3, auto)/repeat(4, auto);
+    border: 2px dashed red;
+    justify-content: start;
+}
+.garage14{
+    display: grid;
+    grid-template: repeat(3, auto)/repeat(4, auto);
+    border: 2px dashed red;
+    justify-content: end;
+}
+.garage15{
+    display: grid;
+    grid-template: repeat(3, auto)/repeat(4, auto);
+    border: 2px dashed red;
+    justify-content: space-between;
+}
+.garage16{
+    display: grid;
+    grid-template: repeat(3, auto)/repeat(4, auto);
+    border: 2px dashed red;
+    justify-content: space-around;
+}
+.garage17{
+    display: grid;
+    grid-template: repeat(3, auto)/repeat(4, auto);
+    border: 2px dashed red;
+    align-content: center;
+    height: 300px;
+}
+.garage18{
+    display: grid;
+    grid-template: repeat(3, auto)/repeat(4, auto);
+    border: 2px dashed red;
+    align-content: start;
+    height: 300px;
+}
+.garage19{
+    display: grid;
+    grid-template: repeat(3, auto)/repeat(4, auto);
+    border: 2px dashed red;
+    align-content: end;
+    height: 300px;
+}
+.garage20{
+    display: grid;
+    grid-template: repeat(3, auto)/repeat(4, auto);
+    border: 2px dashed red;
+    align-content: space-between;
+    height: 300px;
+}
+.garage21{
+    display: grid;
+    grid-template: repeat(3, auto)/repeat(4, auto);
+    border: 2px dashed red;
+    align-content: space-around;
+    height: 300px;
+}
+.garage22{
+    display: grid;
+    grid-template: repeat(3, auto)/repeat(4, auto);
+    border: 2px dashed red;
+    align-content: space-evenly;
+    height: 300px;
+}
+.garage23{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 100px 100px;
+    border: 2px dashed red;
+    padding: 1em;
+    gap: 1em;
+}
+.garage25{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 100px 100px;
+    border: 2px dashed red;
+    grid-template-areas: 
+    "col1 col1 col1"
+    "col2 col2 col3"
+    "col2 col2 col3"
+    "col4 col4 col4";
+    padding: 1em;
+    gap: 1em;
+}
+.item5{
+    grid-area: col1;
+}
+.item6{
+    grid-area: col2;
+}
+.item7{
+    grid-area: col3;
+}
+.item8{
+    grid-area: col4;
+}
+
+.grid-item1{
+    border: 1px solid gray;
+    padding: 15px;
+    background-color: white;
+    }
+
+    .item10{
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    .item20{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+    .item30{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+    .item40{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 4;
+    }
+
+    .item50{
+        grid-column: 1/ span 3;
+    }
+    .item60{
+        grid-column: 1/ span 2;
+        grid-row: 2/ span 2;
+    }
+    .item70{
+        grid-column: 3/ span 1;
+        grid-row: 2/ span 2;
+    }
+    .item80{
+        grid-column: 1/ span 3;
+        grid-row: 4/ span 3;
+    }
+
+.garage24{
+    display: grid;
+    grid-template: repeat(4, 100px)/repeat(3, 1fr);
+    border: 2px dashed red;
+    padding: 1em;
+    gap: 1em;
+}
+section{
+    margin-bottom: 15px;
+}
+.item1{
+    grid-area: 1/1/2/4;
+}
+.item2{
+    grid-area: 2/1/4/3;
+}
+.item3{
+    grid-area: 2/3/4/4;
+}
+.item4{
+    grid-area: 5/1/4/4;
+}
+.garage1{
+    border: 1px solid gray;
+    padding: 15px;
+}

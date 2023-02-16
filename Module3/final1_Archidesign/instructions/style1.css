@@ -1,0 +1,553 @@
+
+/*********************************
+Font face
+****************************************/
+@font-face {
+    font-family: 'Nunito';
+    src: url('fonts/nunito/nunito-regular.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Nunito1';
+    src: url('fonts/nunito/nunito-bold.ttf');
+}
+
+@font-face {
+    font-family: 'Fjalla One';
+    src: url('fonts/fjalla_one/fjallaone-regular.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+
+/**********************************************
+Body
+**********************************************/
+body{
+    font-family: Nunito;
+    margin: 0;
+    background-color: #f9f9f9;
+    color: #414141;
+    line-height: 1.5em;
+}
+
+
+/***********************************************
+Header
+***********************************************/
+header{
+    color: white;
+    display: flex;
+    padding: 5px;
+    justify-content: space-around;
+    background-color: #00748D;
+    flex-wrap: wrap;
+}
+
+header>div{
+    font-size: 20px;
+}
+
+nav> ul{
+    display: flex;
+    list-style-type: none;
+    gap: 1em;
+}
+li>a{
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+}
+
+li a:hover{
+    background-color: rgb(247, 235, 235);
+    color: #00748D;
+}
+
+.active{
+    background-color: #fff;
+    color: #00748D;
+}
+
+/******************************************
+h1 h2 h3
+******************************************/
+h1, h2, h3{
+    font-family: 'Fjalla One';
+}
+h1{
+    font-size: 30px;
+}
+h2{
+    font-size: 25px;
+}
+h3{
+    font-size: 20px;
+}
+
+/*****************************************
+
+*****************************************/
+.path{
+    background-image: url(images/path.png);
+    position: relative;
+    bottom: 5px;
+    height: 5px;
+}
+
+/****************************************
+Main
+****************************************/
+main{
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.styl{
+    font-family: Nunito1;
+    font-style: italic;
+    color: #00748D;
+}
+hr{
+    width: 50%;
+    color: #CB8606;
+}
+
+.grid-container1>article>div{
+    display: flex;
+}
+.img1{
+    width: 10%;
+    height: 5%;
+}
+.img2{
+    width: 15%;
+    height: 5%;
+}
+
+/****************************************
+Grid
+****************************************/
+.grid-container1{
+    display: grid;
+    grid-template: repeat(5, auto)/ repeat(4, auto);
+    gap: 2em;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.img{
+    width: 45%;
+}
+.grid-container1>h2{
+    justify-self: center;
+    align-self: end;
+    grid-area: 1/1/2/4;
+}
+
+.grid-container1>div:nth-of-type(1){
+    justify-self: center;
+    align-self: end;
+    grid-area: 2/1/3/4;
+}
+.grid-container1>div:nth-of-type(2){
+    display: flex;
+    gap: 1em;
+    grid-area: 3/1/4/4;
+}
+.grid-container1>div:nth-of-type(2)>p{
+    flex-basis: 50%;
+}
+.grid-container1>div:nth-of-type(4)>p{
+    flex-basis: 50%;
+}
+.grid-container1>div:nth-of-type(3){
+    justify-self: center;
+    align-self: end;
+    grid-area: 4/1/5/4;
+}
+.grid-container1>div:nth-of-type(4){
+    display: flex;
+    gap: 1em;
+    grid-area: 5/1/6/4;
+}
+.grid-container1>article:nth-of-type(1){
+    grid-area: 1/4/4/5;
+}
+.grid-container1>article:nth-of-type(2){
+    grid-area: 4/4/6/5;
+}
+.a{
+    text-decoration: none;
+    background-color: #00748D;
+    color: #fff;
+    padding: 0.5em 4em;
+}
+
+.grid-container1>article>ul>li{
+    list-style-image: url(images/circle.png);
+}
+
+/************************************************
+Footer
+************************************************/
+footer>section{
+    color: white;
+    display: flex;
+    padding: 5px;
+    justify-content: space-around;
+    background-color: #00748D;
+    margin-top: 25px;
+    padding: 15px;
+}
+
+footer>section>div{
+    font-size: 20px;
+}
+
+footer{
+    background-color: rgb(75, 72, 72);
+    text-align: center;
+}
+
+footer>img{
+    width: 60px;
+}
+
+
+/*******************************************
+
+*******************************************/
+.overflow{
+    overflow-y: scroll;
+    height: 30em;
+}
+.grid-container1>article>h3{
+    text-align: center;
+}
+
+h2::before{
+    content: "-";
+    color: #00748D;
+}
+h2::after{
+    content: "-";
+    color: #00748D;
+}
+h2{
+    color:#CB8606;
+}
+h3::before{
+    content: "-";
+    color: #CB8606;
+}
+h3::after{
+    content: "-";
+    color: #CB8606;
+}
+h3{
+    color: #00748D;
+}
+i{
+    color: white;
+    background-color: #CB8606;
+    padding: 15px;
+    font-size: 20px;
+}
+.fab{
+    color: white;
+    background-color: #00748D;
+}
+.f{
+    background-color: #00748D;
+}
+section:nth-of-type(3)>img{
+    border: 4px solid #00748D;
+}
+
+@media screen and (max-width: 1100px) {
+    .img{
+        width: 100%;
+    }
+    header{
+        padding: 15px;
+        gap: 1em;
+    }
+    header>div>img{
+        flex-basis: 100%;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    header>div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    footer>section{
+        justify-content: space-between;
+    }
+
+    nav>ul{
+        display: flex;
+        flex-basis: 100%;
+        gap: 5em;
+    }
+  main{
+    width: 100%;
+  }
+  .grid-container1{
+    display: grid;
+    grid-template: repeat(7, auto)/ repeat(4, auto);
+    gap: 2em;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-inline: 1em;
+  }
+  .grid-container1>h2{
+    justify-self: center;
+    align-self: end;
+    grid-area: 1/1/2/5;
+}
+.grid-container1>div:nth-of-type(1){
+    grid-area: 2/1/3/5;
+}
+.grid-container1>div:nth-of-type(2){
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    grid-area: 3/1/4/5;
+}
+.grid-container1>div:nth-of-type(3){
+    grid-area: 4/1/5/5;
+}
+.grid-container1>div:nth-of-type(4){
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    grid-area: 5/1/6/5;
+}
+.grid-container1>article:nth-of-type(1){
+    grid-area: 6/1/7/3;
+}
+.grid-container1>article:nth-of-type(2){
+    grid-area: 6/3/7/5;
+}
+.grid-container1>div:nth-of-type(2)>p{
+    flex-basis: 100%;
+}
+.grid-container1>div:nth-of-type(4)>p{
+    flex-basis: 100%;
+}
+}
+
+@media screen and (max-width: 780px) {
+    .img{
+        width: 100%;
+    }
+    .img1{
+        width: 5%;
+        height: 5%;
+    }
+    .img2{
+        width: 8%;
+        height: 5%;
+    }
+    header{
+        padding: 15px;
+        gap: 1em;
+    }
+    header>div>img{
+        flex-basis: 100%;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    header>div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    footer>section{
+        justify-content: space-between;
+    }
+
+    nav>ul{
+        display: flex;
+        flex-basis: 100%;
+        gap: 2em;
+    }
+    footer>section{
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        gap: 1em;
+      }
+
+      footer>section>div{
+        flex-basis: 100%;
+      }
+
+      footer>section>div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+      footer>section>div>span{
+        flex-basis: 100%;
+    }
+    
+  main{
+    width: 100%;
+  }
+  .grid-container1{
+    display: grid;
+    grid-template: repeat(7, auto)/ repeat(4, auto);
+    gap: 2em;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-inline: 1em;
+  }
+  .grid-container1>h2{
+    justify-self: center;
+    align-self: end;
+    grid-area: 1/1/2/5;
+}
+.grid-container1>div:nth-of-type(1){
+    grid-area: 2/1/3/5;
+}
+.grid-container1>div:nth-of-type(2){
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    grid-area: 3/1/4/5;
+}
+.grid-container1>div:nth-of-type(3){
+    grid-area: 4/1/5/5;
+}
+.grid-container1>div:nth-of-type(4){
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    grid-area: 5/1/6/5;
+}
+.grid-container1>article:nth-of-type(1){
+    grid-area: 6/1/7/5;
+}
+.grid-container1>article:nth-of-type(2){
+    grid-area: 7/1/8/5;
+}
+.grid-container1>div:nth-of-type(2)>p{
+    flex-basis: 100%;
+}
+.grid-container1>div:nth-of-type(4)>p{
+    flex-basis: 100%;
+}
+}
+
+@media screen and (max-width: 630px) {
+    .img{
+        width: 100%;
+    }
+    .img1{
+        width: 10%;
+        height: 5%;
+    }
+    .img2{
+        width: 13%;
+        height: 5%;
+    }
+    nav>ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    li{
+        flex-basis: 100%;
+    }
+    li>a{
+        text-decoration: none;
+        color: white;
+        padding: 0.5em 5em;
+        font-size: 20px;
+    }
+    header{
+        text-align: center;
+    }
+    header>div>img{
+        flex-basis: 80%;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    footer>section{
+        justify-content: space-between;
+    }
+
+    footer>section{
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        gap: 1em;
+      }
+
+      footer>section>div{
+        flex-basis: 100%;
+      }
+
+      footer>section>div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+      footer>section>div>span{
+        flex-basis: 100%;
+    }
+    
+  main{
+    width: 100%;
+  }
+  .grid-container1{
+    display: grid;
+    grid-template: repeat(7, auto)/ repeat(4, auto);
+    gap: 2em;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-inline: 1em;
+  }
+  .grid-container1>h2{
+    justify-self: center;
+    align-self: end;
+    grid-area: 1/1/2/5;
+}
+.grid-container1>div:nth-of-type(1){
+    grid-area: 2/1/3/5;
+}
+.grid-container1>div:nth-of-type(2){
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    grid-area: 3/1/4/5;
+}
+.grid-container1>div:nth-of-type(3){
+    grid-area: 4/1/5/5;
+}
+.grid-container1>div:nth-of-type(4){
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    grid-area: 5/1/6/5;
+}
+.grid-container1>article:nth-of-type(1){
+    grid-area: 6/1/7/5;
+}
+.grid-container1>article:nth-of-type(2){
+    grid-area: 7/1/8/5;
+}
+.grid-container1>div:nth-of-type(2)>p{
+    flex-basis: 100%;
+}
+.grid-container1>div:nth-of-type(4)>p{
+    flex-basis: 100%;
+}
+}

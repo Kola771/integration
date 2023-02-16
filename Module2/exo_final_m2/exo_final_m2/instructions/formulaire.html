@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="ressources/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="formulaire.css">
+    <title>Maquette</title>
+</head>
+<body>
+    <header>
+        <span class="pour"> <a href="#index.html"> <img  src="ressources/logo.png" alt="hello word"></a></span>
+
+        <nav>
+        <ul>
+            <li><a class="active" href="maquette.html">Carnet de voyage</a></li>
+            <li><a href="#news">A propos</a></li>
+            <li><a href="formulaire.html">Me contacter</a></li>
+          </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Me contacter</h1>
+
+        <div class="container">
+            <form action="" method="get">
+            <div class="blacky">
+                <input type="text" id="nom" name="nom" placeholder="Votre nom.." required>
+            
+                <input type="text" id="prenom" name="prenom" placeholder="Vos prénoms.." required>
+            </div>
+
+            <div class="blacky">
+                <input type="email" id="email" name="email" placeholder="you@gmail.com" required>
+
+                
+                <input type="text" list="ok" id="pays" name="pays" placeholder="Votre pays.." required>
+                <datalist id="ok">
+                  <option value="Australia">Autriche</option>
+                  <option value="Maroc">Maroc</option>
+                  <option value="Pays-bas">Pays-bas</option>
+                </datalist>
+            </div>
+                <textarea name="comment" id="comment" cols="20" rows="5" placeholder="Votre commentaire" required></textarea>
+              
+                <input type="submit" value="Envoyer">
+              </form>
+        </div>
+    </main>
+    <footer>
+        <img class="simple" src="logo-3wa.png" alt="Logo de la 3WA">
+			<div><a class="ou" href="https://3wa.fr/propriete-materiel-pedagogique/" target="_blank" title="S'ouvre dans une nouvelle fenêtre vers le site de la 3WA">&copy; Ce matériel pédagogique est la propriété de la 3W Academy.</a></div>
+			<div>Cet exercice a été réalisé par Catherine Denos.</div>
+    </footer>
+   
+</body>
+</html>

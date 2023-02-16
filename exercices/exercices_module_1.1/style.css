@@ -1,0 +1,43 @@
+header{
+    text-align: center;
+    background-color: rgb(78, 75, 75);
+    padding: 5px;
+}
+header >h1{
+    color: red;
+}
+header p{
+    color: white;
+}
+body{
+    background-color: rgb(224, 217, 217);
+}
+main{
+    
+    padding: 2em;
+}
+th, td{
+    border: 1px solid grey;
+    padding: 10px;
+}
+.oui{
+    border-collapse: collapse;
+}
+.okay{
+    background-color: bisque;
+}
+.ok{
+    text-align: right;
+}
+section{
+    background-color: white;
+    padding: 20px;
+}
+.azerty{
+    font-size: 18px;
+    color: brown;
+    text-align: center;
+    padding: 20px;
+    border-collapse: collapse;
+    border: 1px solid grey;
+}

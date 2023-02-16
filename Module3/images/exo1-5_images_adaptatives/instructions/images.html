@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Images</title>
+</head>
+<body>
+    <header>
+        <h1>Images adaptatives</h1>
+        <p>Images adaptatives avec les attributs srcset et sizes / l'élément &ltpicture &gt </p>
+    </header>
+    <main>
+           <section>
+            <h2>Démo srcset et descripteur x</h2>
+            <p>Le navigateur sélectionne la version HD de l'image si l'écran est HD.
+                Si le navigateur ne reconnaît pas srcset ou si l'écran n'est pas HD, l'image chargée est celle de src.</p>
+                <img src="ressources/papillon-600.jpg" style="width: 40%;" alt="papillon" srcset="ressources/papillon-600HD.jpg 2x">
+
+           </section>
+           <section>
+            <h2>Démo srcset et descripteur w</h2>
+            <p>
+                J'indique au navigateur la taille de l'image pour qu'il puisse sélectionner celle qu'il considère comme convenant le mieux.</p>
+                
+
+           </section>
+           <section>
+            <h2>Démo srcset et sizes</h2>
+            <p>sizes indique au navigateur quelle doit être la largeur finale de l'image à l'affichage.</p>
+                <picture style="width: 500px;">
+                    <source media="(max-width: 900px)" srcset="ressources/papillon-400.jpg">
+                    <img style="width:70% ;" src="ressources/papillon-600HD.jpg" alt="Démo" style="width:auto;">
+                </picture>
+
+           </section>
+           <section>
+            <h2>Démo srcset et descripteur w</h2>
+            <p>
+                Image par défaut pour les navigateurs ne prenant pas en charge picture</p>
+                <picture style="width: 500px;">
+                    <source media="(min-width: 1024px)" srcset="ressources/clownfish-desktop-hd.jpg">
+                    <source media="(min-width: 960px)" srcset="ressources/clownfish-tablette-hd.jpg">
+                    <source media="(min-width: 769px)" srcset="ressources/clownfish-mobile-hd.jpg">
+                    <img style="width:70% ;" src="ressources/clownfish-mobile.jpg" alt="Deux papillons posés sur des fleurs.">
+                </picture>
+
+           </section>
+    </main>
+    <footer>
+        <img src="logo-3wa.png" alt="Logo 3W Academy">
+        <p>Ce matériel pédagogique est la propriété de la <span> 3W Academy</span>. Cet exercice a été réalisé par Stephane Pereck.</p>
+    </footer>
+</body>
+</html>

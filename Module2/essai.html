@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essai</title>
+    <style>
+        body{
+            background-color: rgb(224, 217, 217);
+            margin: 0;
+        }
+        .bot{
+            font-size: 16px;
+            width: 70%;
+            margin-left: 28%;
+        }
+        select, textarea{
+            font-size: 16px;
+            width: 99%;
+        }
+        .oui{
+            background-color: rgb(221, 34, 34);
+            padding: 1%;
+            color: white;
+            margin: 0 15%;
+        }
+        header{
+            text-align: center;
+            background-color: rgb(78, 75, 75);
+            padding: 5px;
+        }
+        header >h1{
+            color: red;
+        }
+        header p{
+            color: white;
+        }
+        main{
+            margin: 5%;
+        }
+        input, textarea{
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid #fff;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Un formulaire simple</h1>
+        <p>Faire un premier formulaire simple</p>
+    </header>
+    <main>
+        <form action="#" method="get">
+
+            <fieldset>
+
+                <legend>Mes coordonnées</legend>
+                <label for="prenom">Prénom</label>
+                <input class="bot" type="text" name="prenom" id="prenom" placeholder="Entrez votre prénom" required><hr>
+
+                <label for="nom">Nom</label>
+                <input class="bot" type="text" name="nom" id="nom" placeholder="Entrez votre nom" required><hr>
+
+                <label for="email">Email</label>
+                <input class="bot" type="email" name="email" id="email" placeholder="you@gmail.com" required>
+
+            </fieldset><br>
+
+            <fieldset>
+
+                <legend>Ma demande</legend>
+                <select name="choisir">
+                    <option disabled selected>Choisir l'objet de ma demande...</option>
+                    <option value="Demande d'emploi">Demande d'emploi</option>
+                    <option value="Demande de stage">Demande de stage</option>
+                </select><br><br>
+                
+                <textarea name="commentaire" id="commentaire" cols="20" rows="5" placeholder="Votre réponse" required></textarea><br><br>
+
+                    <label for="pref">Quel langage préférez-vous?</label>
+                <input class="bot" list="langage" name="preference" id="pref" required>
+                <datalist id="langage">
+                    <option value="CSS"></option>
+                    <option value="HTML"></option>
+                    <option value="Javascript"></option>
+                    <option value="NodeJs"></option>
+                </datalist>
+
+            </fieldset><br>
+
+            <fieldset>
+            <input class="oui" type="submit" name="send" value="Valider le formulaire">
+            <input class="oui" type="reset" value="Effacer les informations">
+
+            
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>

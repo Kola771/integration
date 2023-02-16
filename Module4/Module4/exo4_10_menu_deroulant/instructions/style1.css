@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    background-color: rgb(49, 48, 48);
+}
+header>h1 {
+    color: orangered;
+}
+header>p {
+    color: rgb(153, 147, 147);
+}
+
+main {
+   
+    background-color: rgb(182, 166, 166);
+    border: 1px solid black;
+    border: transparent;
+    padding: 40px;
+}
+article{
+    background-color: #fff;
+    border: 1px solid black;
+    border: transparent;
+    padding: 1em;
+    margin-block: 15px;
+}
+nav{
+    background-color: rgb(49, 48, 48);
+}
+nav>ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+nav>ul>li>a {
+    text-decoration: none;
+    color: white;
+}
+nav>ul>li {
+    padding: 1em 1.5em;
+    display: inline-block;
+    position: relative;
+    list-style-type: none;
+}
+nav>ul>li>ul {
+    display: none;
+    position: absolute;
+    min-width: 200px;
+    background-color: rgb(49, 48, 48);
+    top: 100%;
+    left: 0;
+    padding: 0;
+}
+nav>ul>li>ul>li{
+    color: white;
+    padding: 1em 1.5em;
+    text-decoration: none;
+    list-style-type: none;
+}
+nav>ul>li>ul>li a{
+    color: #fff;
+    text-decoration: none;
+}
+nav>ul>li:hover{
+    padding: 1em 1.5em;
+    background-color: orangered;
+}
+nav>ul>li:nth-of-type(2)>ul>li:hover{
+    background-color: orangered;
+}
+nav>ul>li:nth-of-type(3)>ul>li:hover{
+    background-color: orangered;
+}
+ nav>ul>li:hover ul {
+    display: block;
+ }
+
+footer {
+    text-align: center;
+    background-color: rgb(49, 48, 48);
+    padding: 15px;
+}
+footer>p {
+    color: rgb(153, 147, 147);
+}

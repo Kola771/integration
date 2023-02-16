@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex{
+            display: flex;
+            /* width: 50em; */
+            flex-flow: wrap;
+            background-color: pink;
+            border: 1px solid green;
+            justify-content: space-around;
+            /* align-items: flex-end; */
+            /* align-content: center; */
+        }
+        .flex>article{
+            flex: 1;
+            flex-basis: 25%;
+        }
+        /* .flex article:first-child{
+            flex-basis: 100%;
+        } */
+        .flex article:last-child{
+            flex-basis: 100%;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Accueil</li>
+                <li>A propos</li>
+                <li>Contact</li>
+                <li>Blog</li>
+                <li>Connexion</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <div class="flex">
+        <article class="ok">
+            <h2>Article 1</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem dignissimos illo cumque doloremque fugit a quos modi alias. Libero in excepturi fuga reiciendis numquam vero veritatis voluptatum laborum quo beatae?</p>
+        </article>
+        <article>
+            <h2>Article 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, iusto minus? Eos aliquam similique ut maiores neque ullam quidem voluptas repellendus! Placeat, quam adipisci officiis quisquam nulla ipsum veniam beatae.</p>
+        </article>
+        <article>
+            <h2>Article 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dicta cum fugit aut, aliquam iusto aliquid labore voluptate, itaque, assumenda facere eum perspiciatis nesciunt ratione. Laboriosam aperiam vitae consectetur quisquam?</p>
+        </article>
+        <article>
+            <h2>Article 4</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae reprehenderit non suscipit dolor ipsum, voluptate laboriosam impedit excepturi quo doloremque at aperiam, tenetur eius. Eaque libero vero architecto at ab?</p>
+        </article>
+    </div>
+</main>
+</body>
+</html>

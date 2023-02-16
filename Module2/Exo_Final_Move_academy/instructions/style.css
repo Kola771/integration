@@ -1,0 +1,190 @@
+:root{
+    --clr-primary: #7e4a7c;
+    --clr-secondary: #b878b5;
+    --clr-tertiary: #ffeefe;
+
+    --clr-a: white;
+
+    --clr-bgc: white;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: var(--clr-primary);
+  display: flex;
+  justify-content: space-evenly;
+  padding: 15px;
+}
+
+
+ li a {
+  color: var(--clr-a);
+  padding: 14px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+li a:hover {
+  background-color: var(--clr-bgc);
+  color: var(--clr-primary);
+}
+
+
+.ou{
+    text-decoration: none;
+    color: white;
+}
+body {
+    font-family: Lato;
+	margin: 0;
+	color: #444;
+	line-height: 1.6;
+    font-weight: normal;
+}
+header{
+    text-align: center;
+}
+h1{
+    text-align: center;
+    color: var(--clr-primary);
+    font-size: 50px;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    max-width : 1100px;
+}
+
+h2{
+   color: var(--clr-secondary);
+    font-size: 40px;
+}
+h2:hover{
+    
+  transform: scale(1.05);
+}
+h3{
+    color: var(--clr-secondary);
+    font-size: 1.4rem;
+}
+footer{
+    background-color: var(--clr-primary);
+    margin-top: 20px;
+    text-align: center;
+}
+footer div{
+    background-color: rgb(44, 44, 44);
+    text-align: center;
+    padding: 5px;
+    color: var(--clr-a);
+
+}
+
+.pari{
+    display: flex;
+}
+
+.image{
+    padding-right: 15px;
+} 
+.paris{
+    display: flex;
+}
+.bg-1{
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.bg-1:hover{
+    transform: scale(1.1);
+}
+
+table, tr, td, th{
+    border: 1px solid var(--clr-secondary);
+    border-collapse: collapse;
+    padding: 15px;
+    text-align: center;
+}
+.qwerty{
+    background-color: var(--clr-primary);
+    color: white;
+    text-align: center;
+}
+form{
+    border: 1px solid black;
+    padding: 1em;
+    text-align: center;
+}
+form>div{
+    background-color:#ffeefe;
+    padding: 1em;
+    margin-bottom: 10px;
+    justify-content: space-around;
+}
+form>div input{
+    margin-right: 8%;
+    width: 30%;
+    outline: none;
+}
+form>div>select{
+    margin-right: 5%;
+    width: 22%;
+    background-color: var(--clr-bgc);
+}
+input[type=Submit]{
+    background-color: var(--clr-primary);
+    padding: 5px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 25px;
+    border-radius: 1em;
+}
+.play{
+    background-color: var(--clr-primary);
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    text-transform: uppercase;
+}
+.vide{
+    background-color: var(--clr-tertiary);
+}
+.simple{
+    width: 60px;
+}
+span{
+    color: var(--clr-primary);
+}
+.oui{
+    display: inherit;
+    background-color: #fff;
+}
+.oui>li{
+    list-style-image: url(images/puce-fleche.png);
+   
+}
+.reseaux{
+    background-color: var(--clr-primary);
+    padding: 5px;
+}
+.okkk{
+    flex-basis: 100%;
+}
+.cash{
+    position: relative;
+    left: 0;
+    animation-name: example;
+    animation-duration: 1.5s;  
+    animation-delay: 0s;
+    animation-fill-mode: backwards;
+}
+@keyframes example {
+    from {left: 150%;}
+    to {left: 0;}
+  }

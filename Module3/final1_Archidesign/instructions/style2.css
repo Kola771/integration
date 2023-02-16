@@ -1,0 +1,270 @@
+
+/*********************************
+Font face
+****************************************/
+@font-face {
+    font-family: 'Nunito';
+    src: url('fonts/nunito/nunito-regular.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Nunito1';
+    src: url('fonts/nunito/nunito-bold.ttf');
+}
+
+@font-face {
+    font-family: 'Fjalla One';
+    src: url('fonts/fjalla_one/fjallaone-regular.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+
+/**********************************************
+Body
+**********************************************/
+body{
+    font-family: Nunito;
+    margin: 0;
+    background-color: #f9f9f9;
+    color: #414141;
+    line-height: 1.5em;
+}
+
+
+/***********************************************
+Header
+***********************************************/
+header{
+    color: white;
+    display: flex;
+    padding: 5px;
+    justify-content: space-around;
+    background-color: #00748D;
+    flex-wrap: wrap;
+}
+
+header>div{
+    font-size: 20px;
+}
+
+nav> ul{
+    display: flex;
+    list-style-type: none;
+    gap: 1em;
+}
+li>a{
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+}
+
+li a:hover{
+    background-color: rgb(247, 235, 235);
+    color: #00748D;
+}
+
+.active{
+    background-color: #fff;
+    color: #00748D;
+}
+
+/******************************************
+h1 h2 h3
+******************************************/
+h1, h2, h3{
+    font-family: 'Fjalla One';
+}
+h1{
+    font-size: 30px;
+}
+h2{
+    font-size: 25px;
+}
+h3{
+    font-size: 20px;
+}
+
+/*****************************************
+
+*****************************************/
+.path{
+    background-image: url(images/path.png);
+    position: relative;
+    bottom: 5px;
+    height: 5px;
+}
+
+/****************************************
+Main
+****************************************/
+main{
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.overflow{
+    overflow-y: scroll;
+    height: 40em;
+}
+
+.styl{
+    font-family: Nunito1;
+    font-style: italic;
+    color: #00748D;
+}
+hr{
+    width: 50%;
+    color: #CB8606;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.img1{
+    width: 8%;
+    height: 4%;
+}
+.img2{
+    width: 13%;
+    height: 4%;
+}
+/****************************************
+Grid
+****************************************/
+.grid1>article:nth-of-type(1)>div{
+    display: flex;
+}
+.grid{
+    border: 4px solid #00748D;
+}
+.grid>img{
+    width: 100%;
+    height: 100%;
+}
+.grid>img:hover{
+    transform: scale(1.2);
+}
+.grid1{
+    display: grid;
+    width: 40%;
+    height: 40%;
+}
+.grid-container{
+    display: grid;
+    grid-template: repeat(6, auto)/ repeat(4, auto);
+    gap: 0.5em;
+    width: 60%;
+    height: 70%;
+}
+.grid-container>h2{
+    grid-area: 1/1/2/5;
+    justify-self: center;
+}
+.grid-container>.item2{
+    grid-area: 2/3/4/4;
+}
+.grid-container>.item4{
+    grid-area: 3/1/5/2;
+}
+.grid-container>.item9{
+    grid-area: 4/4/6/5;
+}
+.grid-container>.item11{
+    grid-area: 5/2/7/3;
+}
+.grid1>article:nth-of-type(2)>ul>li{
+    list-style-image: url(images/circle.png);
+}
+.grand-grid{
+    display: flex;
+    gap: 5em;
+    margin-top: 25px;
+}
+
+/************************************************
+Footer
+************************************************/
+footer>section{
+    color: white;
+    display: flex;
+    padding: 5px;
+    justify-content: space-around;
+    background-color: #00748D;
+    margin-top: 25px;
+    padding: 15px;
+}
+
+footer>section>div{
+    font-size: 20px;
+}
+
+footer{
+    background-color: rgb(75, 72, 72);
+    text-align: center;
+}
+
+footer>img{
+    width: 60px;
+}
+
+
+/*******************************************
+
+*******************************************/
+
+h2::before{
+    content: "-";
+    color: #00748D;
+}
+h2::after{
+    content: "-";
+    color: #00748D;
+}
+h2{
+    color:#CB8606;
+}
+h3::before{
+    content: "-";
+    color: #CB8606;
+}
+h3::after{
+    content: "-";
+    color: #CB8606;
+}
+h3{
+    color: #00748D;
+}
+i{
+    color: white;
+    background-color: #CB8606;
+    padding: 15px;
+    font-size: 20px;
+}
+.fab{
+    color: white;
+    background-color: #00748D;
+}
+.f{
+    background-color: #00748D;
+}
+
+
+/**********************************************
+Media Queries Tablette
+**********************************************/
+@media screen and (max-width: 1100px) {
+    .grand-grid{
+        flex-wrap: wrap;
+        margin-inline: 15px;
+    }
+    .grid-container{
+        flex-basis: 100%;
+    }
+    .grid1{
+        grid-template-columns: repeat(2, 1fr);
+        flex-basis: 100%;
+    }
+}

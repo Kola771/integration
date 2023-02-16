@@ -1,0 +1,111 @@
+
+header{
+    background-color: rgb(49, 48, 48);
+    text-align: center;
+    color: white;
+    padding: 0.5em;
+}
+footer{
+    background-color: rgb(49, 48, 48);
+    text-align: center;
+    color: white;
+    padding: 0.5em;
+}
+footer>img{
+    width: 60px;
+}
+span{
+    color: #DD5735;
+}
+h1{
+    color: #DD5735;
+}
+body{
+    background-color: #fff;
+}
+
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+main>article:nth-of-type(1){
+    flex-basis: 100%;
+   }
+   main>article:nth-of-type(6){
+    flex-basis: 100%;
+   }
+   main>article{
+    flex-basis: 25%;
+   }
+   main>article:nth-of-type(1){
+    background-color: rgb(189, 186, 186);
+    color: black;
+    text-align: left;
+    padding: 1px;
+    flex-basis: 100%;
+}
+main>article:nth-of-type(6){
+    background-color: rgb(189, 186, 186);
+    color: black;
+    text-align: left;
+    padding: 1px;
+    flex-basis: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+    main{
+     display: flex;
+     flex-wrap: wrap;
+    }
+    main>article:nth-of-type(1){
+     flex-basis: 100%;
+    }
+    main>article:nth-of-type(6){
+     flex-basis: 100%;
+    }
+    main>article{
+     flex-basis: 50%;
+    }
+    main>article:nth-of-type(1){
+        background-color: rgb(189, 186, 186);
+        color: black;
+        text-align: left;
+        padding: 1px;
+        flex-basis: 100%;
+    }
+    main>article:nth-of-type(6){
+        background-color: rgb(189, 186, 186);
+        color: black;
+        text-align: left;
+        padding: 1px;
+        flex-basis: 100%;
+    }
+  }
+
+
+@media screen and (max-width: 780px) {
+    main{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    main>article:nth-of-type(1){
+        background-color: rgb(189, 186, 186);
+        color: black;
+        text-align: left;
+        padding: 1px;
+        flex-basis: 100%;
+    }
+    main>article:nth-of-type(6){
+        background-color: rgb(189, 186, 186);
+        color: black;
+        text-align: left;
+        padding: 1px;
+        flex-basis: 100%;
+    }
+    main>article{
+        flex-basis: 100%;
+       }
+}
+
+

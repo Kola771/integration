@@ -1,0 +1,580 @@
+
+/*********************************
+Font face
+****************************************/
+@font-face {
+    font-family: 'Nunito';
+    src: url('fonts/nunito/nunito-regular.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Fjalla One';
+    src: url('fonts/fjalla_one/fjallaone-regular.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+
+/**********************************************
+Body
+**********************************************/
+body{
+    font-family: Nunito;
+    margin: 0;
+    background-color: #f9f9f9;
+    color: #414141;
+}
+
+
+/***********************************************
+Header
+***********************************************/
+header{
+    color: white;
+    display: flex;
+    padding: 5px;
+    justify-content: space-around;
+    background-color: #00748D;
+    flex-wrap: wrap;
+}
+
+header>div{
+    font-size: 20px;
+}
+
+nav, ul{
+    display: flex;
+    list-style-type: none;
+    gap: 1em;
+}
+li>a{
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+}
+
+li a:hover{
+    background-color: rgb(247, 235, 235);
+    color: #00748D;
+}
+
+.active{
+    background-color: #fff;
+    color: #00748D;
+}
+
+/******************************************
+h1 h2 h3
+******************************************/
+h1, h2, h3{
+    font-family: 'Fjalla One';
+}
+h1{
+    font-size: 30px;
+}
+h2{
+    font-size: 25px;
+}
+h3{
+    font-size: 20px;
+}
+
+/*****************************************
+
+*****************************************/
+.path{
+    background-image: url(images/path.png);
+    position: relative;
+    bottom: 5px;
+    height: 5px;
+}
+
+/****************************************
+Main
+****************************************/
+main{
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+
+/****************************************
+Grid
+****************************************/
+section.grid>h1{
+    background-color: #CB8606;
+    color: white;
+    width: 45%;
+    padding: 0.2em;
+    top: 120px;
+    left: 400px;
+    bottom: 0;
+    position: relative;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+section.grid>p{
+    background-color: white;
+    color: #00748D;
+    width: 60%;
+    padding: 0.5em;
+    top: 120px;
+    left: 300px;
+    bottom: 0;
+    position: relative;
+    text-align: center;
+}
+
+.grid-container{
+    display: grid;
+    grid-template: repeat(2, 1fr)/ repeat(4, 1fr);
+    gap: 1em;
+    margin-inline: 1em;
+    text-align: center;
+}
+
+.grid-container>h2{
+    grid-area: 1/1/2/5;
+    justify-self: center;
+    align-self: center;
+}
+
+.grid-container>article> div{
+    text-align: center;
+}
+
+.grid{
+    background-image: url(images/bg-header.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    margin-top: -28px;
+}
+.a{
+    text-decoration: none;
+    background-color: #00748D;
+    color: #fff;
+    padding: 0.5em 4em;
+}
+
+/************************************************
+Footer
+************************************************/
+footer>section{
+    color: white;
+    display: flex;
+    padding: 5px;
+    justify-content: space-around;
+    background-color: #00748D;
+    margin-top: 25px;
+    padding: 15px;
+}
+
+footer>section>div{
+    font-size: 20px;
+}
+
+footer{
+    background-color: rgb(75, 72, 72);
+    text-align: center;
+}
+
+footer>img{
+    width: 60px;
+}
+
+/*******************************************
+
+*******************************************/
+h2::before{
+    content: "-";
+    color: #CB8606;
+}
+h2::after{
+    content: "-";
+    color: #CB8606;
+}
+section>h2{
+    color:#00748D;
+}
+i{
+    color: white;
+    background-color: #CB8606;
+    padding: 15px;
+    font-size: 20px;
+}
+.fab{
+    color: white;
+    background-color: #00748D;
+}
+.f{
+    background-color: #00748D;
+}
+section:nth-of-type(3)>img{
+    border: 4px solid #00748D;
+}
+
+/*****************************************
+Média Queries Tablette
+*****************************************/
+@media screen and (max-width: 1100px) {
+
+    header{
+        padding: 15px;
+        gap: 1em;
+    }
+    header>div>img{
+        flex-basis: 100%;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    header>div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    nav>ul{
+        display: flex;
+        flex-basis: 100%;
+        gap: 5em;
+    }
+  main{
+    width: 100%;
+  }
+  .grid-container{
+    display: grid;
+    grid-template: repeat(3, 1fr)/ repeat(4, 1fr);
+    gap: 4em 2.1em;
+    justify-items: center;
+    margin-inline: 1%;
+}
+.grid{
+    margin-top: -29px;
+}
+section.grid>h1{
+    background-color: #CB8606;
+    color: white;
+    width: 45%;
+    padding: 0.2em;
+    top: 25%;
+    left: 25%;
+    bottom: 0;
+    position: relative;
+    text-transform: uppercase;
+    text-align: center;
+}
+section.grid>p{
+    background-color: white;
+    color: #00748D;
+    width: 55%;
+    padding: 0.5em;
+    top: 25%;
+    left: 20%;
+    bottom: 0;
+    position: relative;
+    text-align: center;
+}
+section:nth-of-type(3){
+    
+    margin-top: -50px;
+}
+
+.grid-container>h2{
+    grid-area: 1/1/2/5;
+    justify-self: center;
+    align-self: end;
+}
+.grid-container>article:nth-of-type(1){
+    grid-area: 2/1/3/3;
+}
+.grid-container>article:nth-of-type(2){
+    grid-area: 2/3/3/5;
+}
+.grid-container>article:nth-of-type(3){
+    grid-area: 3/1/4/3;
+}
+.grid-container>article:nth-of-type(4){
+    grid-area: 3/3/4/5;
+}
+
+.grid-container>img:nth-of-type(1){
+    grid-area: 2/1/3/3;
+}
+.grid-container>img:nth-of-type(2){
+    grid-area: 2/3/3/5;
+}
+.grid-container>img:nth-of-type(3){
+    grid-area: 3/1/4/3;
+}
+.grid-container>img:nth-of-type(4){
+    grid-area: 3/3/4/5;
+}
+.a{
+    text-decoration: none;
+    background-color: #00748D;
+    color: #fff;
+    padding: 0.5em 5em;
+}
+.grid-container>article{
+    text-align: center;
+}
+}
+
+/*****************************************
+Média Queries Mobile
+*****************************************/
+@media screen and (max-width: 780px) {
+
+    main{
+        width: 100%;
+      }
+
+      footer>section{
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        gap: 1em;
+      }
+
+      footer>section>div{
+        flex-basis: 100%;
+      }
+
+      footer>section>div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+      footer>section>div>span{
+        flex-basis: 75%;
+    }
+
+    nav>ul{
+        display: flex;
+        flex-basis: 100%;
+        gap: 2em;
+    }
+
+    section.grid>h1{
+        background-color: #CB8606;
+        color: white;
+        width: 60%;
+        padding: 0.2em;
+        top: 100px;
+        left: 130px;
+        bottom: 0;
+        position: relative;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    
+    section.grid>p{
+        background-color: white;
+        color: #00748D;
+        width: 70%;
+        padding: 0.5em;
+        top: 100px;
+        left: 100px;
+        bottom: 0;
+        position: relative;
+        text-align: center;
+    }
+
+    .grid-container{
+        display: grid;
+        grid-template: repeat(5, 1fr)/ repeat(4, 1fr);
+        justify-items: center;
+        margin-inline: 1em;
+    }
+
+    .grid-container>h2{
+        grid-area: 1/1/2/5;
+        justify-self: center;
+        align-self: end;
+    }
+
+    .grid-container>article:nth-of-type(1){
+        grid-area: 2/1/3/5;
+    }
+
+    .grid-container>article:nth-of-type(2){
+        grid-area: 3/1/4/5;
+    }
+
+    .grid-container>article:nth-of-type(3){
+        grid-area: 4/1/5/5;
+    }
+
+    .grid-container>article:nth-of-type(4){
+        grid-area: 5/1/6/5;
+    }
+    
+    .grid-container>img:nth-of-type(1){
+        grid-area: 2/1/3/5;
+    }
+
+    .grid-container>img:nth-of-type(2){
+        grid-area: 3/1/4/5;
+    }
+
+    .grid-container>img:nth-of-type(3){
+        grid-area: 4/1/5/5;
+    }
+
+    .grid-container>img:nth-of-type(4){
+        grid-area: 5/1/6/5;
+    }
+
+    .a{
+        text-decoration: none;
+        background-color: #00748D;
+        color: #fff;
+        padding: 0.5em 13em;
+        margin-inline: 4em;
+    }
+    .grid-container>article{
+        text-align: center;
+    }
+   
+}
+
+/*****************************************
+Média Queries Petit Mobile
+*****************************************/
+@media screen and (max-width: 630px) {
+    
+    main{
+        width: 100%;
+      }
+
+      footer>section{
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        gap: 1em;
+      }
+
+      footer>section>div{
+        flex-basis: 100%;
+      }
+
+      footer>section>div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+      footer>section>div>span{
+        flex-basis: 60%;
+    }
+    nav>ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    li{
+        flex-basis: 100%;
+    }
+    li>a{
+        text-decoration: none;
+        color: white;
+        padding: 0.5em 5em;
+        font-size: 20px;
+    }
+    header{
+        text-align: center;
+    }
+    header>div>img{
+        flex-basis: 80%;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    section.grid>h1{
+        background-color: #CB8606;
+        color: white;
+        width: 60%;
+        padding: 0.2em;
+        top: 30%;
+        left: 25%;
+        bottom: 0;
+        position: relative;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    
+    section.grid>p{
+        background-color: white;
+        color: #00748D;
+        width: 70%;
+        padding: 0.5em;
+        top: 30%;
+        left: 20%;
+        bottom: 0;
+        position: relative;
+        text-align: center;
+    }
+
+    .grid-container{
+        display: grid;
+        grid-template: repeat(5, 1fr)/ repeat(4, 1fr);
+        justify-items: center;
+    }
+
+    .grid-container>h2{
+        grid-area: 1/1/2/5;
+        justify-self: center;
+        align-self: end;
+    }
+
+    .grid-container>article:nth-of-type(1){
+        grid-area: 2/1/3/5;
+    }
+
+    .grid-container>article:nth-of-type(2){
+        grid-area: 3/1/4/5;
+    }
+
+    .grid-container>article:nth-of-type(3){
+        grid-area: 4/1/5/5;
+    }
+
+    .grid-container>article:nth-of-type(4){
+        grid-area: 5/1/6/5;
+    }
+    
+    .grid-container>img:nth-of-type(1){
+        grid-area: 2/1/3/5;
+    }
+
+    .grid-container>img:nth-of-type(2){
+        grid-area: 3/1/4/5;
+    }
+
+    .grid-container>img:nth-of-type(3){
+        grid-area: 4/1/5/5;
+    }
+
+    .grid-container>img:nth-of-type(4){
+        grid-area: 5/1/6/5;
+    }
+
+    .a{
+        text-decoration: none;
+        background-color: #00748D;
+        color: #fff;
+        padding: 0.5em 4em;
+    }
+    .grid-container>article{
+        text-align: center;
+    }
+}
+
+
+
+/***********************************************
+Actualité
+***********************************************/

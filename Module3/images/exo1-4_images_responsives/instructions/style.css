@@ -1,0 +1,65 @@
+
+header{
+    background-color: rgb(49, 48, 48);
+    text-align: center;
+    color: white;
+    padding: 0.5em;
+}
+footer{
+    background-color: rgb(49, 48, 48);
+    text-align: center;
+    color: white;
+    padding: 0.5em;
+}
+footer>img{
+    width: 60px;
+}
+span{
+    color: #DD5735;
+}
+h1{
+    color: #DD5735;
+}
+body{
+    background-color: #fff;
+}
+main{
+    padding: 4em;
+    background-image: url(ressources/phare.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 1px solid;
+    gap:2em;
+    padding: 2em;
+    background-color: #fff;
+}
+img{
+    width: 100%;
+}
+@media screen and (max-width: 650px) {
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        border: 1px solid;
+        gap:2em;
+        padding: 2em;
+        background-color: #fff;
+    }
+}
+@media screen and (max-width: 465px) {
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        border: 1px solid;
+        gap:2em;
+        padding: 2em;
+        background-color: #fff;
+    } 
+}
+
+

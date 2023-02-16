@@ -1,0 +1,122 @@
+@font-face {
+    font-family: Lato;
+    src: url(lato/lato-bold.ttf);
+}
+@font-face {
+    font-family: Lato;
+    src: url(lato/lato-bolditalic.woff2);
+    font-weight: bold;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #40CCEA;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+
+li {
+    
+    justify-content: space-between;
+}
+
+li a {
+
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+.ou{
+    text-decoration: none;
+    color: white;
+}
+
+
+body {
+    font-family: Lato;
+	margin: 0;
+	color: #444;
+	line-height: 1.6;
+    font-weight: normal;
+}
+header{
+    text-align: center;
+}
+h1{
+    text-align: center;
+    color: #40CCEA;
+    border-bottom: 1px dashed #40CCEA;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    max-width : 900px;
+    background-color: #f2f2f2;
+    padding: 15px;
+    border-radius: 1em;
+}
+
+h2{
+    text-transform: uppercase;
+    font-size: 1.6rem;
+}
+
+footer{
+    text-align: center; 
+    background-color: #40CCEA;
+    padding: 15px;
+    margin-top: 2%;
+}
+
+input[type=text], input[type=email]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+  }
+  textarea {
+    width: 98%;
+    padding: 12px 20px;
+    margin: 8px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+    resize: none;
+  }
+  input[type=submit] {
+    width: 100%;
+    background-color: #40CCEA;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #096a80;
+  }
+
+.simple{
+    width: 60px;
+}
+.blacky{
+    display: flex;
+}
+  

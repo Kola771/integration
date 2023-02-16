@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    background-color: rgb(49, 48, 48);
+}
+header>h1 {
+    color: orangered;
+}
+header>p {
+    color: rgb(153, 147, 147);
+}
+
+main {
+   
+    background-color: rgb(182, 166, 166);
+    border: 1px solid black;
+    border: transparent;
+    padding: 40px;
+}
+article{
+    background-color: #fff;
+    border: 1px solid black;
+    border: transparent;
+    padding: 1em;
+    margin-block: 15px;
+}
+nav{
+    background-color: rgb(49, 48, 48);
+}
+nav> a {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+}
+footer {
+    text-align: center;
+    background-color: rgb(49, 48, 48);
+    padding: 15px;
+}
+footer>p {
+    color: rgb(153, 147, 147);
+}
+.roule {
+    background-color: rgb(49, 48, 48);
+    color: white;
+    padding: 16px;
+    border: none;
+  }
+  
+  .coule {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .boule {
+    display: none;
+    position: absolute;
+    background-color: rgb(49, 48, 48);
+    min-width: 200px;
+  }
+  
+  .boule a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .boule a:hover {
+    background-color: #f50;
+  }
+
+  .coule:hover .boule {
+    display: block;
+}
+  
+  .coule:hover .roule {
+    background-color: #f50;
+}

@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    width: 70%;
+    margin: 0 auto;
+    background-color: beige;
+    padding: 2em;
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+}
+section >h1{
+    flex-basis: 100%;
+}
+section > article{
+    flex: 1;
+    margin: 1.5em;
+    align-self: center;
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .container{
+        width: 100%;
+        background-color: rgb(226, 178, 178);
+        padding: 0.1em;
+    }
+    section > article{
+        margin: 0.2em;
+        align-self: center;
+        flex-basis: 45%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container{
+        width: 100%;
+        background-color: rgb(28, 13, 83);
+        padding: 0.1em;
+    }
+    section > article{
+        margin: 0.2em;
+        align-self: center;
+        flex-basis: 100%;
+        color: white;
+    }
+}

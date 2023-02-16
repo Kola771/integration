@@ -1,0 +1,308 @@
+
+/*********************************
+Font face
+****************************************/
+@font-face {
+    font-family: 'Nunito';
+    src: url('fonts/nunito/nunito-regular.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Nunito1';
+    src: url('fonts/nunito/nunito-bold.ttf');
+}
+
+@font-face {
+    font-family: 'Fjalla One';
+    src: url('fonts/fjalla_one/fjallaone-regular.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Courgette;
+    src: url('fonts/courgette/courgette-regular.woff2');
+}
+
+/**********************************************
+Body
+**********************************************/
+body{
+    font-family: Nunito;
+    margin: 0;
+    background-color: #ededed;
+    color: #414141;
+    line-height: 1.5em;
+}
+
+
+/***********************************************
+Header
+***********************************************/
+header{
+    color: black;
+    display: flex;
+    padding: 5px;
+    justify-content: space-around;
+    background-color: #fff;
+    flex-wrap: wrap;
+    max-width: 1700px;
+    margin: 0 auto;
+}
+
+header>div{
+    font-size: 20px;
+}
+
+nav> ul{
+    display: flex;
+    list-style-type: none;
+    gap: 1em;
+}
+li>a{
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+    font-size: 20px;
+}
+
+li a:hover{
+    background-color:  #ededed;
+    color: #000;
+}
+
+.active{
+    background-color: #ededed;
+    border: 2px solid #00748D;
+    border-top: transparent;
+    border-right: transparent;
+}
+
+main >.conteneur> section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+main >.conteneur> section> h2 {
+    font-family: 'Nunito';
+    text-align: center;
+    flex-basis: 100%;
+}
+article {
+    position: relative;
+    background-color: #ededed;
+    width: 48%;
+    padding: 0.5em;
+}
+
+article> img {
+    width: 100%;
+}
+
+article> p> a {
+    position: absolute;
+    right: 5%;
+    bottom: 1%;
+    background-color: #1d1e3d;
+    color: white;
+    text-decoration: none;
+    padding: 0.2em;
+}
+
+
+article>h3 {
+    color: #00748D;
+    font-family: 'Courgette';
+}
+
+section:nth-of-type(2)>article>h3 {
+    color: #db0059;
+}
+section:nth-of-type(1)>div {
+    margin-top: 20px;
+    text-align: center;
+}
+section:nth-of-type(1)>div>svg {
+    width: 5%;
+}
+section:nth-of-type(2)>div {
+    margin-top: 20px;
+    text-align: center;
+}
+section:nth-of-type(2)>div>svg {
+    width: 5%;
+}
+
+/******************************************
+h1 h2 h3
+******************************************/
+ h2{
+    font-family: 'Nunito';
+}
+h1{
+    font-size: 30px;
+}
+h2{
+    font-size: 25px;
+}
+h3{
+    font-size: 20px;
+}
+
+cite::before {
+    content: '"';
+}
+
+cite::after {
+    content: '"';
+}
+blockquote {
+    text-align: center;
+    font-family: Nunito;
+    font-weight: bold;
+    background-color: #ededed;
+    border: 3px solid #00748D;
+    border-top: transparent;
+    border-right: transparent;
+    padding: 10px;
+}
+/*****************************************
+
+*****************************************/
+
+
+/****************************************
+Main
+****************************************/
+.conteneur{
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 1.5em;
+}
+.conteneur>div:nth-of-type(2) {
+    display: flex;    
+    gap: 5em;
+}
+.conteneur>div:nth-of-type(2)>section {
+    background-color: #ededed;
+    padding: 1em;
+    margin-block: 5px;
+    flex-basis: 45%;
+}
+.conteneur>div:nth-of-type(2)>section>div>svg {
+    width: 5%;
+    color:  #db0059;
+}
+.conteneur>div:nth-of-type(2)>section>div {
+    text-align: center;
+}
+/****************************************
+Grid
+****************************************/
+
+
+/************************************************
+Footer
+************************************************/
+footer>div:nth-of-type(1) {
+    color: white;
+    display: flex;
+    padding: 5px;
+    justify-content: space-around;
+    background-color:  #db0059;
+    margin-top: 25px;
+    padding: 15px;
+}
+footer>div:nth-of-type(1)>section>form {
+   border: 2px solid #ededed;
+   border-top: transparent;
+   border-right: transparent;
+   padding: 1em;
+   width: 100%;
+}
+footer>div:nth-of-type(1)>section>form>div:nth-of-type(1) {
+   margin-left: -3%;
+}
+[type="email"] {
+    background-color: #ededed;
+    width: 50%;
+    margin-block: 15px;
+    margin-left: -43%;
+    border: transparent;
+    padding: 0.5em;
+    outline: none;
+    opacity: 0.8;
+    color: #db0059;
+}
+[type="Submit"] {
+    margin-left: -79%;
+    padding: 0.5em;
+    border: transparent;
+    color: #db0059;
+}
+main>section {
+    display: flex;
+    background-image: url(images/banner1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    margin-top: -15px;
+    justify-content: center;
+    align-items: center;
+}
+main>section>h2 {
+    background-color: #ededed;
+    text-align: center;
+    padding: 1em;
+    opacity: 0.8;
+    color: #db0059;
+}
+footer{
+    background-color: rgb(75, 72, 72);
+    text-align: center;
+}
+
+footer>img{
+    margin-top: 15px;
+    width: 60px;
+}
+
+
+/*******************************************
+
+*******************************************/
+
+i{
+    color: white;
+    background-color: #CB8606;
+    padding: 15px;
+    font-size: 20px;
+}
+.fab{
+    color: white;
+    background-color:  #db0059;
+}
+.f{
+    background-color:  #db0059;
+}
+
+
+/**********************************************
+Media Queries Tablette
+**********************************************/
+@media screen and (max-width: 1100px) {
+    .grand-grid{
+        flex-wrap: wrap;
+        margin-inline: 15px;
+    }
+    .grid-container{
+        flex-basis: 100%;
+    }
+    .grid1{
+        grid-template-columns: repeat(2, 1fr);
+        flex-basis: 100%;
+    }
+}

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Tableaux</title>
+</head>
+<body>
+    <header>
+        <h1>Tableaux</h1>
+        <p>Diverses formes de tableaux</p>
+    </header>
+   <main>
+    <section>
+    <h2>Une table simple</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Entete 1</th>
+                <th>Entete 2</th>
+                <th>Entete 3</th>
+                <th>Entete 4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Case 1</td>
+                <td>Case 2</td>
+                <td>Case 3</td>
+                <td>Case 4</td>
+            </tr>
+            <tr>
+                <td>Case 5</td>
+                <td>Case 6</td>
+                <td>Case 7</td>
+                <td>Case 8</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>La meme table avec des cases fusionnées</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Entete 1</th>
+                <th>Entete 2</th>
+                <th>Entete 3</th>
+                <th>Entete 4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Case 1</td>
+                <td colspan="2">Case 2</td>
+                <td rowspan="2">Case 4</td>
+            </tr>
+            <tr>
+                <td colspan="2">Case 5</td>
+                <td>Case 7</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Une table plus complexe</h2>
+    
+    <table class="oui">
+        <caption class="azerty">Régions francaises</caption>
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Code ISO</th>
+                <th>Code INSEE</th>
+                <th>Superficie (km<sup>2</sup>)</th>
+                <th>Population 2020</th>
+                <th>Nombre de communes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="okay">
+                <td>Auvergines-Rhone-Aples</td>
+                <td>FR-ARA</td>
+                <td class="ok">84</td>
+                <td class="ok">69 711</td>
+                <td class="ok">8 032 377</td>
+                <td class="ok">10</td>
+            </tr>
+            <tr>
+                <td>Bourgogne-Franche-Comité</td>
+                <td>FR-BFC</td>
+                <td class="ok">27</td>
+                <td class="ok">47 784</td>
+                <td class="ok">2 783 039</td>
+                <td class="ok">11</td>
+            </tr>
+            <tr class="okay">
+                <td>Bretagne</td>
+                <td>FR-BRE</td>
+                <td class="ok">53</td>
+                <td class="ok">27 208</td>
+                <td class="ok">3 340 379</td>
+                <td class="ok">12</td>
+            </tr>
+            <tr>
+                <td>Centre-Val de Loire</td>
+                <td>FR-CVL</td>
+                <td class="ok">24</td>
+                <td class="ok">39 151</td>
+                <td class="ok">2 559 073</td>
+                <td class="ok">13</td>
+            </tr>
+            <tr class="okay">
+                <td>Auvergines-Rhone-Aples</td>
+                <td>FR-ARA</td>
+                <td class="ok">84</td>
+                <td class="ok">69 711</td>
+                <td class="ok">8 032 377</td>
+                <td class="ok">10</td>
+            </tr>
+            <tr>
+                <td>Bourgogne-Franche-Comité</td>
+                <td>FR-BFC</td>
+                <td class="ok">27</td>
+                <td class="ok">47 784</td>
+                <td class="ok">2 783 039</td>
+                <td class="ok">11</td>
+            </tr>
+            <tr class="okay">
+                <td>Bretagne</td>
+                <td>FR-BRE</td>
+                <td class="ok">53</td>
+                <td class="ok">27 208</td>
+                <td class="ok">3 340 379</td>
+                <td class="ok">12</td>
+            </tr>
+            <tr>
+                <td>Centre-Val de Loire</td>
+                <td>FR-CVL</td>
+                <td class="ok">24</td>
+                <td class="ok">39 151</td>
+                <td class="ok">2 559 073</td>
+                <td class="ok">13</td>
+            </tr>
+            <tr class="okay">
+                <td>Auvergines-Rhone-Aples</td>
+                <td>FR-ARA</td>
+                <td class="ok">84</td>
+                <td class="ok">69 711</td>
+                <td class="ok">8 032 377</td>
+                <td class="ok">10</td>
+            </tr>
+            <tr>
+                <td>Bourgogne-Franche-Comité</td>
+                <td>FR-BFC</td>
+                <td class="ok">27</td>
+                <td class="ok">47 784</td>
+                <td class="ok">2 783 039</td>
+                <td class="ok">11</td>
+            </tr>
+            <tr class="okay">
+                <td>Bretagne</td>
+                <td>FR-BRE</td>
+                <td class="ok">53</td>
+                <td class="ok">27 208</td>
+                <td class="ok">3 340 379</td>
+                <td class="ok">12</td>
+            </tr>
+            <tr>
+                <td>Centre-Val de Loire</td>
+                <td>FR-CVL</td>
+                <td class="ok">24</td>
+                <td class="ok">39 151</td>
+                <td class="ok">2 559 073</td>
+                <td class="ok">13</td>
+            </tr>
+            <tr class="okay">
+                <td>Centre-Val de Loire</td>
+                <td>FR-CVL</td>
+                <td class="ok">24</td>
+                <td class="ok">39 151</td>
+                <td class="ok">2 559 073</td>
+                <td class="ok">13</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3" class="ok">Total</td>
+                <td class="ok">543 941</td>
+                <td class="ok">64 897 954</td>
+                <td class="ok">34 839</td>
+            </tr>
+        </tfoot>
+    </table>
+</section>
+   </main>
+</body>
+</html>

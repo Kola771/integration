@@ -1,0 +1,88 @@
+@font-face {
+    font-family: "Courgette";
+    src: url(ressources/Courgette-Regular.ttf);
+}
+
+body{
+    margin: 0 auto;
+    width: 980px;
+    font-size: 18px;
+}
+header p{
+    text-align: center;
+}
+header h1{
+    font-family: "Courgette";
+    text-align: center;
+    color: #003884;
+    font-size: 40px; 
+}
+header nav{
+    font-family: "Courgette";
+    color: #003884 ;
+    font-size: 18px;
+}
+
+a{
+    text-decoration: none;
+}
+.okk{
+    color: black;
+}
+.bah >img{
+    float: right;
+    padding-left: 20px;
+}
+
+blockquote{
+    font-family: "Courgette";
+    color: #003884;
+    text-align: center;
+    background-color: #d7e1ef;
+}
+h2{
+    font-family: "Courgette";
+    color:  #d7e1ef;
+    text-align: center;
+    font-size: 35px; 
+}
+h3{
+    font-family: "Courgette";
+    color: #003884;
+    text-align: center;
+    font-size: 25px;
+}
+.ok{
+    font-family: "Courgette";
+    color: #d7e1ef;
+    text-align: center;
+    font-size: 25px;
+}
+ 
+.art >img{
+    float: left;
+    padding-right: 20px;
+}
+.azert >img{
+    float: right;
+    padding-left: 20px;
+}
+.azerty >img{
+    float: left; 
+    padding-right: 20px;
+}
+div{
+    padding: 1%;
+}
+.oui{
+    font-size: 14px;
+}
+em{
+    color: #003884;  
+}
+strong{
+    color: #003884;
+}
+.oui{
+    text-align: center;
+}

@@ -1,0 +1,103 @@
+.floot{
+    background-image: url(statue-of-liberty.jpg);
+    max-width: 40em;
+    min-height: 20em;
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+.fot{
+    width: 10%;
+}
+.flot{
+    background-image: url(statue-of-liberty.jpg);
+    max-width: 40em;
+    min-height: 20em;
+    background-repeat: repeat;
+    /* background-size: 80%; */
+}
+.oui{
+    background-color: teal;
+    max-width: 40em;
+}
+.flo{
+    background-image: url(statue-of-liberty.jpg);
+    max-width: 30em;
+    min-height: 20em;
+    background-repeat: no-repeat;
+     background-size: 80%; 
+}
+.flok{
+    background-image: url(statue-of-liberty.jpg);
+    max-width: 50em;
+    min-height: 10em;
+    background-repeat: repeat-x;
+    background-position: top;
+}
+.okay{
+    background-color: teal;
+    max-width: 40em;
+    min-height: 20em;
+}
+
+.ok{
+    background-image: url(statue-of-liberty.jpg);
+    background-repeat: repeat-y;
+    color: white;
+    background-color: teal;
+    max-width: 40em;
+    min-height: 20em;
+}
+
+.oki{
+    background-image: url(statue-of-liberty.jpg);
+    background-repeat: no-repeat;
+    background-position: 80% 40%;
+    color: white;
+    background-color: teal;
+    width: 40em;
+    height: 20em;
+}
+.ok1{
+    background-image: url(statue-of-liberty.jpg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    color: white;
+    background-color: teal;
+    width: 40em;
+    height: 20em;
+}
+.ok2{
+    background-image: url(statue-of-liberty.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: teal;
+    width: 40em;
+    height: 20em;
+}
+.ok3{
+    background-image: url(statue-of-liberty.jpg);
+    background-repeat: no-repeat;
+    background-position: left top;
+    color: white;
+    background-color: teal;
+    width: 40em;
+    height: 20em;
+}
+.ok4{
+    background-image: url(statue-of-liberty.jpg);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    color: white;
+    background-color: teal;
+    width: 40em;
+    height: 20em;
+}
+.ok5{
+    background-image: url(statue-of-liberty.jpg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    color: white;
+    background-color: teal;
+    width: 40em;
+    height: 20em;
+}
